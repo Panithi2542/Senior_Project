@@ -101,17 +101,58 @@
             </div>
             <div class="col-md-10 bg-light">
                 <div class="container">
+                    <!--เป็นฟอร์มที่จะรับข้อมูลรายละเอียดวิชาใหม่เพื่อไปแสดงผลในหน้า information ของรายวิชา-->
                     <form>
                         <div class="mb-3">
-                            <label for="lessoninput" class="form-label">Lesson</label>
-                            <input type="text" class="form-control" id="lessoninput">
+                            <label for="subjectidinput" class="form-label">รหัสวิชา</label>
+                            <input type="text" class="form-control" id="subjectidinput">
                         </div>
                         <div class="mb-3">
-                            <label for="topicinput" class="form-label">Topic</label>
-                            <input type="text" class="form-control" id="topicinput"
-                                placeholder="รายละเอียดบท ภาพรวมของบท">
+                            <label for="thainameinput" class="form-label">ชื่อวิชา(ภาษาไทย)</label>
+                            <input type="text" class="form-control" id="thainameinput">
                         </div>
-                        <button type="submit" style="color: cornflowerblue;">Add</button>
+                        <div class="mb-3">
+                            <label for="engnameinput" class="form-label">ชื่อวิชา(อังกฤษ)</label>
+                            <input type="text" class="form-control" id="engnameinput">
+                        </div>
+                        <div class="mb-3">สาขาวิชา</div>
+                        <div class="mb-3"><span>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">กำลัง</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">ควบคุม</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">สื่อสาร</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio3">อิเล็กทรอนิกส์</label>
+                                </div>
+                            </span></div>
+
+                        <div class="mb-3">
+                            <label for="creditinput" class="form-label">จำนวนหน่วยกิต</label>
+                            <input type="text" class="form-control" id="creditinput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripinput" class="form-label">คำอธิบายวิชา</label>
+                            <input type="text" class="form-control" id="descripinput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="numberinput" class="form-label">จำนวนคนลงทะเบียน</label>
+                            <input type="text" class="form-control" id="numberinput">
+                        </div>
+                        <!--เมื่อกด submit แล้วข้อมูลจะเชื่อมไปยัง database แล้วจะแสดงผลคือย้อนกลับไปที่หน้า information-->
+                       <button type="submit" style="color: cornflowerblue;">Done</button>
                     </form>
                 </div>
             </div>

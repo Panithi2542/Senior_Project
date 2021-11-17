@@ -78,42 +78,36 @@
                 </div>
             </nav>
         </div>
-        <div class="row">
-            <!--แบ่งเป็น 3 ส่วน-->
-            <!--ส่วนแรกเมนูด้านซ้าย ขนาดหน้าจอใหญ่กว่าขนาดMdจะมีความกว้าง2คอลัมน์ ถ้าเล็กกว่าจะเรียงต่อกัน-->
-            <!--<i class="ไอคอนจากเว็บ"></i> เป็นคำสั้งเพื่อใส่ไอคอนหน้าเมนู-->
-            <div class="col-md-2 bg-light">
-                <div class="d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-dark" style="width: 250px;">
-                    <a href="/"
-                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32"></svg> <span class="fs-4">Tele Tran</span> </a>
-                    <ul class="nav nav-pills flex-column mb-auto">
-                        <li> <a href="T-sub1.html" class="nav-link text-white"> <i class="cil-search"></i>
-                                <span class="ms-2">About</span> </a> </li>
-                        <li> <a href="#" class="nav-link text-white"><i class="cil-dinner"></i>
-                                <span class="ms-2">Requestment</span> </a> </li>
-                        <li> <a href="#" class="nav-link text-white"> <i class="cil-chart"></i>
-                                <span class="ms-2">Assessment</span> </a> </li>
-                        <li> <a href="/" class="nav-link text-white"><i class="cil-settings"></i>
-                                <span class="ms-2">Management</span> </a> </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-10 bg-light">
+        
+            <div class="col-md-12 bg-light">
                 <div class="container">
+                    <!--เป็นฟอร์มที่จะรับข้อมูลรายละเอียดวิชาใหม่เพื่อไปแสดงผลในหน้า information ของรายวิชา-->
                     <form>
                         <div class="mb-3">
-                            <label for="lessoninput" class="form-label">Lesson</label>
-                            <input type="text" class="form-control" id="lessoninput">
+                            <label for="nameinput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameinput">
                         </div>
                         <div class="mb-3">
-                            <label for="topicinput" class="form-label">Topic</label>
-                            <input type="text" class="form-control" id="topicinput"
-                                placeholder="รายละเอียดบท ภาพรวมของบท">
+                            <label for="cuidinput" class="form-label">ID CU</label>
+                            <input type="text" class="form-control" id="cuidinput">
                         </div>
-                        <button type="submit" style="color: cornflowerblue;">Add</button>
+                        <div class="mb-3">
+                            <label for="groupinput" class="form-label">Group</label>
+                            <input type="text" class="form-control" id="groupinput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailinput" class="form-label">User (Email CU)</label>
+                            <input type="email" class="form-control" id="emailinput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordinput" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordinput">
+                        </div>
+                        <!--เมื่อกด submit แล้วข้อมูลจะเชื่อมไปยัง database แล้วจะแสดงผลคือย้อนกลับไปที่หน้า Profile-->
+                       <button type="submit" style="color: cornflowerblue;">Save</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+</body>

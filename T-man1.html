@@ -29,6 +29,9 @@
             transform: rotate(360deg)
         }
     </style>
+
+
+
 </head>
 
 <body>
@@ -57,10 +60,9 @@
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Notification</a>
                             </li>
-                            <div class="dropdown">
-                                <a href="#"
-                                    class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="dropdown"> 
+                                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> 
                                     <img src="https://github.com/mdo.png" alt="" width="32" height="32"
                                         class="rounded-circle me-2"> <strong> John W </strong> </a>
                                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow"
@@ -99,21 +101,14 @@
                     </ul>
                 </div>
             </div>
+
+            <!--ส่วนที่สองข้อมูลตรงกลาง ขนาดหน้าจอใหญ่กว่าขนาดMdจะมีความกว้าง5คอลัมน์ ถ้าเล็กกว่าจะเรียงต่อกัน-->
             <div class="col-md-10 bg-light">
-                <div class="container">
-                    <form>
-                        <div class="mb-3">
-                            <label for="lessoninput" class="form-label">Lesson</label>
-                            <input type="text" class="form-control" id="lessoninput">
-                        </div>
-                        <div class="mb-3">
-                            <label for="topicinput" class="form-label">Topic</label>
-                            <input type="text" class="form-control" id="topicinput"
-                                placeholder="รายละเอียดบท ภาพรวมของบท">
-                        </div>
-                        <button type="submit" style="color: cornflowerblue;">Add</button>
-                    </form>
+                <!--สร้างปุ่มที่สามารถลิ้งค์ได้-->
+                <div class="d-grid gap-5" style="margin-top: 50px;">
+                    <a href="T-infor1.html" class="btn btn-primary btn-lg" role="button">Information</a>
+                    <a href="T-rep1.html" class="btn btn-primary btn-lg" role="button" >Report</a>
                 </div>
-            </div>
-        </div>
-    </div>
+                
+
+</body>

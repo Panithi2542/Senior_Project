@@ -65,7 +65,7 @@
                                         class="rounded-circle me-2"> <strong> John W </strong> </a>
                                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow"
                                     aria-labelledby="dropdownUser1">
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -103,21 +103,26 @@
                 <div class="row">
                     <h2>Information</h2>
                 </div>
+                <!--แบ่งเป็น3 card ย่อยๆตามเนื้อหารายวิชาที่ต้องการจะแสดง-->
                 <!--card รายละเอียดรายวิชา-->
                 <div class="col">
                     <div class="card" style="border-radius: 20px;">
                         <div class="card-body">
                             <h5 class="card-title text-primary">About subject</h5>
                             <dl class="row">
+                                <!--ดึงข้อมูลรหัสวิชามาใส่แทน a-->
                                 <dt class="col-sm-3">รหัสวิชา</dt>
                                 <dd class="col-sm-9"><span>a</span>&nbsp;<span>/</span>&nbsp;<span>b</span></dd>
-
+                               
+                                <!--ดึงข้อมูลชื่อวิชาภาษาไทยมาใส่แทน a-->
                                 <dt class="col-sm-3">ชื่อวิชา(ภาษาไทย)</dt>
                                 <dd class="col-sm-9"><span>a</span>&nbsp;<span>/</span>&nbsp;<span>b</span></dd>
 
+                                <!--ดึงข้อมูลชื่อวิชาภาษาอังกฤษมาใส่แทน a-->
                                 <dt class="col-sm-3">ชื่อวิชา(ภาษาอังกฤษ)</dt>
                                 <dd class="col-sm-9"><span>a</span>&nbsp;<span>/</span>&nbsp;<span>b</span></dd>
 
+                                <!--ดึงข้อมูลสาขาวิชามาแสดงผล จุดนี้ไม่มันใจว่าต้องทำเป็นตัวเลือกงี้หรือว่าให้แสดงผลออกมาเป็นหมวดวิชานั้นเลยดีกว่า-->
                                 <dt class="col-sm-3">สาขาวิชา</dt>
                                 <dd class="col-sm-9"><span>
                                         <div class="form-check form-check-inline">
@@ -142,13 +147,19 @@
                                         </div>
                                     </span></dd>
 
+                                <!--ดึงข้อมูลจำนวนหน่วยกิตมาใส่แทน a-->
                                 <dt class="col-sm-3">จำนวนหน่วยกิต</dt>
                                 <dd class="col-sm-9">&nbsp;&nbsp;<span>a</span>
+                                
+                                <!--ดึงข้อมูลคำอธิบายวิชามาใส่แทน a-->
                                 <dt class="col-sm-3">คำอธิบายวิชา</dt>
                                 <dd class="col-sm-9">&nbsp;&nbsp;<span>a</span>
+
+                                <!--ดึงข้อมูลจำนวนคนลงทะเบียนมาใส่แทน a-->
                                 <dt class="col-sm-3">จำนวนคนลงทะเบียน</dt>
                                 <dd class="col-sm-9">&nbsp;&nbsp;<span>a</span>
                             </dl>
+                            <!--เมื่อกดปุ่มแก้ไขจะลิ้งค์ไปที่หน้า edit ซึ่งเป็นการกรอบข้อมูลเข้าใหม่ใหม่ทั้งหมด-->
                             <a href="T-edit.html" class="btn btn-primary btn-sm" role="button">แก้ไข</a>
                         </div>
                     </div>
@@ -159,6 +170,7 @@
                         <div class="card-body">
                             <h5 class="card-title text-primary">รูปแบบการสอน</h5>
                             <dl class="row">
+                                <!--เป็นการรับข้อมูลรูปแบบการสอนเพื่อแสดงผลให้เห็นว่ารายวิชานี้จะปรากฎขึ้นในภาคเรียนใด-->
                                 <dt class="col-sm-3">Active</dt>
                                 <dd class="col-sm-9"><span>
                                         <div class="form-check form-check-inline">
@@ -178,6 +190,7 @@
                                         </div>
                                     </span></dd>
                                 <dl class="row">
+                                    <!--รับข้อมูลลักษณะการสอนว่าเป็นรวมหรือแยกเซค จำเป็นต่อการนำไปทำประเมินของรายวิชานั้นๆ-->
                                     <dt class="col-sm-3">Section</dt>
                                     <dd class="col-sm-9"><span>
                                             <div class="form-check form-check-inline">
