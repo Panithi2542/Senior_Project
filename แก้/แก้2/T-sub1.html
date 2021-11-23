@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+
+    <title>card</title>
+    <style>
+        body {
+            background-color: #eee
+        }
+
+        .nav-link:hover {
+            background-color: #525252 !important
+        }
+
+        .nav-link .fa {
+            transition: all 1s
+        }
+
+        .nav-link:hover .fa {
+            transform: rotate(360deg)
+        }
+    </style>
+
+    
+
+
+</head>
+
+<body>
+    <!--ส่วนข้อมูลตรงกลาง-->
+    <!--container-fluid : ปรับให้เต็มจอและปรับเปลี่ยนตามขนาดจอ-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!--รายละเอียดแถบเมนู-->
+                <div class="container-fluid">
+                    <!--ส่วนLogo learn -->
+                    <a href="#" class="navbar-brand">
+                        <img src="logo.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">LEARN</a>
+                    <!--สร้างปุ่มที่เมื่อแสดงผลในจอขนาดเล็กจะรวมเมนูไว้ในปุ่มนึง-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--ส่วนเมนูกลับไปหน้าmy course และ notification-->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="T-myhome.html" class="nav-link">MY COURSE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Notification</a>
+                            </li>
+                            <div class="dropdown">
+                                <a href="#"
+                                    class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                        class="rounded-circle me-2"> <strong> John W </strong> </a>
+                                <ul class="dropdown-menu dropdown-menu-dark text-small shadow"
+                                    aria-labelledby="dropdownUser1">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="loginnew.html">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <!--แบ่งเป็น 3 ส่วน-->
+            <!--ส่วนแรกเมนูด้านซ้าย ขนาดหน้าจอใหญ่กว่าขนาดMdจะมีความกว้าง2คอลัมน์ ถ้าเล็กกว่าจะเรียงต่อกัน-->
+            <!--<i class="ไอคอนจากเว็บ"></i> เป็นคำสั้งเพื่อใส่ไอคอนหน้าเมนู-->
+            <div class="col-md-2 bg-light">
+                <div class="d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-dark" style="width: 250px;">
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"></svg> <span class="fs-4">Tele Tran</span> </a>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li> <a href="T-sub1.html" class="nav-link text-white"> <i class="cil-search"></i>
+                                <span class="ms-2">About</span> </a> </li>
+                        <li> <a href="#" class="nav-link text-white"><i class="cil-dinner"></i>
+                                <span class="ms-2">Requestment</span> </a> </li>
+                        <li> <a href="#" class="nav-link text-white"> <i class="cil-chart"></i>
+                                <span class="ms-2">Assessment</span> </a> </li>
+                        <li> <a href="T-man1.html" class="nav-link text-white"><i class="cil-settings"></i>
+                                <span class="ms-2">Management</span> </a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--ส่วนที่สองข้อมูลตรงกลาง ขนาดหน้าจอใหญ่กว่าขนาดMdจะมีความกว้าง5คอลัมน์ ถ้าเล็กกว่าจะเรียงต่อกัน-->
+            <div class="col-md-5 bg-danger">
+                <p class="text-white">ช่องแรก</p>
+                <!--row-cols-1 : แถวนึงมี1อัน , g-3 : ช่องห่างระหว่างอัน-->
+                <div class="row row-cols-1 g-3 bg-light">
+
+                    <!--Card Material-->
+                    <div class="col">
+                        <div class="card" style="border-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Material</h5>
+                                <dl class="row">
+
+                                    <!--gen card ประเมินอาจารย์-->
+                                    <div id='mat_sub'></div>
+                                    <!--ดึงไฟล์JSมาใช้-->
+                                    <script src="mat_list.js"></script>
+
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card Prerequisite สมมติยังไม่่ต้องดึงข้อมูล-->
+                    <div class="col">
+                        <div class="card" style="border-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Prerequisite</h5>
+                                <p>MATLAB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Review สมมติยังไม่่ต้องดึงข้อมูล
+                    <div class="col">
+                        <div class="card" style="border-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Prerequisite</h5>
+                                <h5 class="card-title text-danger">MATLAB</h5>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+
+            <!--ส่วนที่สามข้อมูลขวามือ ขนาดหน้าจอใหญ่กว่าขนาดMdจะมีความกว้าง5คอลัมน์ ถ้าเล็กกว่าจะเรียงต่อกัน-->
+            <div class="col-md-5 bg-warning">
+                <p class="text-white">ช่องส่อง</p>
+                <div class="row row-cols-1 g-3 bg-light">
+
+                    <!--Card Staff-->
+                    <div class="col">
+                        <div class="card" style="border-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Staff</h5>
+
+                                <!-- gen list aj -->
+                                <div id="aj_in_sub"></div>
+                                <!--ดึงไฟล์JSมาใช้-->
+                                <script src="aj_list.js"></script>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Card ช่องทางต่างๆ-->
+                    <div class="col">
+                        <div class="card" style="border-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">ช่องทางต่างๆ</h5>
+                                <dl class="row">
+
+                                    <dt class="col-sm-6">สั่งงาน</dt>
+                                    <!--อนาคตทำโค้ดดึงข้อมูลจากbackendเพิ่มที่ตัวแปร a-->
+                                    <dd class="col-sm-6"><span>Mycourseville</span></dd>
+
+                                    <dt class="col-sm-6">ส่งาน</dt>
+                                    <!--อนาคตทำโค้ดดึงข้อมูลจากbackendเพิ่มที่ตัวแปร a-->
+                                    <dd class="col-sm-6"><span>Mycourseville</span></dd>
+
+                                    <dt class="col-sm-6">คลิป</dt>
+                                    <!--อนาคตทำโค้ดดึงข้อมูลจากbackendเพิ่มที่ตัวแปร a-->
+                                    <dd class="col-sm-6"><span>MS Team</span></dd>
+
+                                    <dt class="col-sm-6">ติดต่ออาจารย์</dt>
+                                    <!--อนาคตทำโค้ดดึงข้อมูลจากbackendเพิ่มที่ตัวแปร a-->
+                                    <dd class="col-sm-6"><span>Line Group</span></dd>
+
+                                    <dt class="col-sm-6">สอนผ่าน</dt>
+                                    <!--อนาคตทำโค้ดดึงข้อมูลจากbackendเพิ่มที่ตัวแปร a-->
+                                    <dd class="col-sm-6"><span>Zoom</span></dd>
+
+
+                                </dl>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
