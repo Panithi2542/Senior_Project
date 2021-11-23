@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+
+    <title>card</title>
+    <style>
+        body {
+            background-color: #eee
+        }
+
+        .nav-link:hover {
+            background-color: #525252 !important
+        }
+
+        .nav-link .fa {
+            transition: all 1s
+        }
+
+        .nav-link:hover .fa {
+            transform: rotate(360deg)
+        }
+    </style>
+</head>
+
+<body>
+    <!--ส่วนข้อมูลตรงกลาง-->
+    <!--container-fluid : ปรับให้เต็มจอและปรับเปลี่ยนตามขนาดจอ-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!--รายละเอียดแถบเมนู-->
+                <div class="container-fluid">
+                    <!--ส่วนLogo learn -->
+                    <a href="#" class="navbar-brand">
+                        <img src="logo.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">LEARN</a>
+                    <!--สร้างปุ่มที่เมื่อแสดงผลในจอขนาดเล็กจะรวมเมนูไว้ในปุ่มนึง-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--ส่วนเมนูกลับไปหน้าmy course และ notification-->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="T-myhome.html" class="nav-link">MY COURSE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Notification</a>
+                            </li>
+                            <div class="dropdown">
+                                <a href="#"
+                                    class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                        class="rounded-circle me-2"> <strong> John W </strong> </a>
+                                <ul class="dropdown-menu dropdown-menu-dark text-small shadow"
+                                    aria-labelledby="dropdownUser1">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="loginnew.html">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <!--แบ่งเป็น 3 ส่วน-->
+            <!--ส่วนแรกเมนูด้านซ้าย ขนาดหน้าจอใหญ่กว่าขนาดMdจะมีความกว้าง2คอลัมน์ ถ้าเล็กกว่าจะเรียงต่อกัน-->
+            <!--<i class="ไอคอนจากเว็บ"></i> เป็นคำสั้งเพื่อใส่ไอคอนหน้าเมนู-->
+            <div class="col-md-2 bg-light">
+                <div class="d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-dark" style="width: 250px;">
+                    <a href="/"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32"></svg> <span class="fs-4">Tele Tran</span> </a>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li> <a href="T-sub1.html" class="nav-link text-white"> <i class="cil-search"></i>
+                                <span class="ms-2">About</span> </a> </li>
+                        <li> <a href="#" class="nav-link text-white"><i class="cil-dinner"></i>
+                                <span class="ms-2">Requestment</span> </a> </li>
+                        <li> <a href="#" class="nav-link text-white"> <i class="cil-chart"></i>
+                                <span class="ms-2">Assessment</span> </a> </li>
+                        <li> <a href="T-man1.html" class="nav-link text-white"><i class="cil-settings"></i>
+                                <span class="ms-2">Management</span> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 bg-light">
+                <div class="container">
+                    <!--เป็นฟอร์มที่จะรับข้อมูลรายละเอียดวิชาใหม่เพื่อไปแสดงผลในหน้า information ของรายวิชา-->
+                    <form>
+                        <div class="mb-3">
+                            <label for="subjectidinput" class="form-label">รหัสวิชา</label>
+                            <input type="text" class="form-control" name="#" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="thainameinput" class="form-label">ชื่อวิชา(ภาษาไทย)</label>
+                            <input type="text" class="form-control" name="#" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="engnameinput" class="form-label">ชื่อวิชา(อังกฤษ)</label>
+                            <input type="text" class="form-control" name="#" required>
+                        </div>
+                        <div class="mb-3">สาขาวิชา</div>
+                        <div class="mb-3"><span>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="#"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">กำลัง</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="#"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">ควบคุม</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="#"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">สื่อสาร</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="#"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio3">อิเล็กทรอนิกส์</label>
+                                </div>
+                            </span></div>
+
+                        <div class="mb-3">
+                            <label for="creditinput" class="form-label">จำนวนหน่วยกิต</label>
+                            <input type="text" class="form-control" name="#" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripinput" class="form-label">คำอธิบายวิชา</label>
+                            <input type="text" class="form-control" name="#" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numberinput" class="form-label">จำนวนคนลงทะเบียน</label>
+                            <input type="text" class="form-control" name="#" required>
+                        </div>
+                        <div class="mb-3">รูปแบบการสอน</div>
+                        <dl class="row">
+                            <dt class="col-sm-3">Active</dt>
+                            <dd class="col-sm-9"><span>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="#"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">ภาคต้น</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="#"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">ภาคปลาย</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="#"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">ภาคฤดูร้อน</label>
+                                    </div>
+                                </span></dd>
+                            <dl class="row">
+                                <dt class="col-sm-3">Section</dt>
+                                <dd class="col-sm-9"><span>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="#"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">รวมsec</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="#"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">แยกsec</label>
+                                        </div>
+                                    </span></dd>
+                            </dl>
+                        </dl>
+                        <!--เมื่อกด submit แล้วข้อมูลจะเชื่อมไปยัง database แล้วจะแสดงผลคือย้อนกลับไปที่หน้า information-->
+                        <button type="submit" style="color: cornflowerblue;">Done</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
