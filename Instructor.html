@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+
+    <link href="theme_2.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+
+
+                <!--รายละเอียดแถบเมนูด้านบน-->
+                <div class="container-fluid">
+                    <!--ส่วนLogo learn -->
+                    <a href="#" class="navbar-brand">
+                        <img src="logo.png" alt="" width="30" height="25" class="d-inline-block align-text-top">
+                        LEARN</a>
+                    <!--สร้างปุ่มที่เมื่อแสดงผลในจอขนาดเล็กจะรวมเมนูไว้ในปุ่มนึง-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--ส่วนเมนูกลับไปหน้าmy course และ notification-->
+                    <div class="d-flex justify-content-end">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="S-mycourse.html" class="nav-link">MY COURSE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Notification</a>
+                                </li>
+                                <div class="dropdown">
+                                    <a href="#"
+                                        class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                        id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                            class="rounded-circle me-2"> <strong> John W </strong> </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="loginnew.html">Sign out</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+        <!--ส่วนเมนูด้านข้าง-->
+        <div class="row">
+            <h1>hide</h1>
+        </div>
+        <div class="row">
+            <h5> </h5>
+        </div> 
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-dark">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <a href="/"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span class="fs-5 d-none d-sm-inline">Telecommunication Transmission</span>
+                        </a>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link align-middle px-0">
+                                    <i class="cil-search"></i><span class="ms-1 d-none d-sm-inline">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <i class="cil-dinner"></i><span
+                                        class="ms-1 d-none d-sm-inline">Requestment</span></a>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="cil-chart"></i><span class="ms-1 d-none d-sm-inline">Assessment</span>
+                                </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0"> <i class="cil-spreadsheet"></i> <span
+                                                class="d-none d-sm-inline">Subject</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0"> <i class="cil-people"></i><span
+                                                class="d-none d-sm-inline"> Instructor</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col col-md-10">
+                    <h3>การประเมินแบบเลือกคะแนน</h3><hr>
+                    <form action="https://httpbin.org/get">
+                        <!--คำถามที่1แบบเลือกคะเเนน-->
+                    <label class="form-label">1.อาจารย์ผู้สอนมีความสามารถในการถ่ายทอดความรู้</label><br>
+                    <label class="form-text">โดยหมายเลข1 หมายถึงไม่มีความสามารถ หมายเลข 5 หมายถึง มีความสามารถมากที่สุด</label>
+                    <div class="form-check">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q1"
+                                id="input-Q1-1" value="1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q1"
+                                id="input-Q1-2" value="2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q1"
+                                id="input-Q1-3" value="3">
+                            <label class="form-check-label" for="inlineRadio3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q1"
+                                id="input-Q1-4" value="4">
+                            <label class="form-check-label" for="inlineRadio3">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q1"
+                                id="input-Q1-5" value="5">
+                            <label class="form-check-label" for="inlineRadio3">5</label>
+                        </div>
+                    </div><hr>
+
+                       <!--คำถามที่2แบบเลือกคะเเนน-->
+                    <label class="form-label">2.ความตรงต่อเวลาของผู้สอน</label><br>
+                    <label class="form-text">โดยหมายเลข1 หมายถึง น้อย หมายเลข 5 หมายถึง มาก</label>
+                    <div class="form-check">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q2"
+                                id="input-Q2-1" value="1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q2"
+                                id="input-Q2-2" value="2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q2"
+                                id="input-Q2-3" value="3">
+                            <label class="form-check-label" for="inlineRadio3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q2"
+                                id="input-Q2-4" value="4">
+                            <label class="form-check-label" for="inlineRadio3">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q2"
+                                id="input-Q2-5" value="5">
+                            <label class="form-check-label" for="inlineRadio3">5</label>
+                        </div>
+                    </div><hr>
+                         <!--คำถามที่3แบบเลือกคะเเนน-->
+                         <label class="form-label">3.ผู้สอนจัดเตรียมสื่อการเรียนการสอนได้อย่างเหมาะสม</label><br>
+                         <label class="form-text">โดยหมายเลข1 หมายถึงง่ายที่สุด หมายเลข 5 หมายถึงยากที่สุด</label>
+                         <div class="form-check">
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q3"
+                                     id="input-Q3-1" value="1">
+                                 <label class="form-check-label" for="inlineRadio1">1</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q3"
+                                     id="input-Q3-2" value="2">
+                                 <label class="form-check-label" for="inlineRadio2">2</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q3"
+                                     id="input-Q3-3" value="3">
+                                 <label class="form-check-label" for="inlineRadio3">3</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q3"
+                                     id="input-Q3-4" value="4">
+                                 <label class="form-check-label" for="inlineRadio3">4</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q3"
+                                     id="input-Q3-5" value="5">
+                                 <label class="form-check-label" for="inlineRadio3">5</label>
+                             </div>
+                         </div><hr>
+     
+                            <!--คำถามที่4แบบเลือกคะเเนน-->
+                         <label class="form-label">4.ความสอดคล้องของเนื้อหาภายในห้องเรียนและคำถามในข้อสอบ</label><br>
+                         <label class="form-text">โดยหมายเลข1 หมายถึง ไม่สอดคล้อง หมายเลข 5 หมายถึง สอดคล้อง</label>
+                         <div class="form-check">
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q4"
+                                     id="input-Q4-1" value="1">
+                                 <label class="form-check-label" for="inlineRadio1">1</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q4"
+                                     id="input-Q4-2" value="2">
+                                 <label class="form-check-label" for="inlineRadio2">2</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q4"
+                                     id="input-Q4-3" value="3">
+                                 <label class="form-check-label" for="inlineRadio3">3</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q4"
+                                     id="input-Q4-4" value="4">
+                                 <label class="form-check-label" for="inlineRadio3">4</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q4"
+                                     id="input-Q4-5" value="5">
+                                 <label class="form-check-label" for="inlineRadio3">5</label>
+                             </div>
+                         </div><hr>
+                          <!--คำถามที่5แบบเลือกคะเเนน-->
+                    <label class="form-label">5.ผู้สอนรับฟังความคิดเห็นของนิสิตและดำเนินการตามความเหมาะสม
+                    </label><br>
+                    <label class="form-text">โดยหมายเลข1 หมายถึง น้อย หมายเลข 5 หมายถึง มาก</label>
+                    <div class="form-check">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q5"
+                                id="input-Q5-1" value="1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q5"
+                                id="input-Q5-2" value="2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q5"
+                                id="input-Q5-3" value="3">
+                            <label class="form-check-label" for="inlineRadio3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q5"
+                                id="input-Q5-4" value="4">
+                            <label class="form-check-label" for="inlineRadio3">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q5"
+                                id="input-Q5-5" value="5">
+                            <label class="form-check-label" for="inlineRadio3">5</label>
+                        </div>
+                    </div><hr>
+
+                       <!--คำถามที่6แบบเลือกคะเเนน-->
+                    <label class="form-label">6.สามารถติดต่อกับอาจารย์ผู้สอนได้เมื่อมีคำถามหรือปัญหาในการเรียน
+                    </label><br>
+                    <label class="form-text">โดยหมายเลข1 หมายถึง ง่ายที่สุด หมายเลข 5 หมายถึง ยากที่สุด</label>
+                    <div class="form-check">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q6"
+                                id="input-Q6-1" value="1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q6"
+                                id="input-Q6-2" value="2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q6"
+                                id="input-Q6-3" value="3">
+                            <label class="form-check-label" for="inlineRadio3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q6"
+                                id="input-Q6-4" value="4">
+                            <label class="form-check-label" for="inlineRadio3">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Q6"
+                                id="input-Q6-5" value="5">
+                            <label class="form-check-label" for="inlineRadio3">5</label>
+                        </div>
+                    </div><hr>
+                         <!--คำถามที่7แบบเลือกคะเเนน-->
+                         <label class="form-label">7.บรรยากาศภายในห้องเรียนเหมาะสมกับการเรียนรู้
+                        </label><br>
+                        <label class="form-text">โดยหมายเลข1 หมายถึงน้อย หมายเลข 5 หมายถึง มาก</label>
+                         <div class="form-check">
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q7"
+                                     id="input-Q7-1" value="1">
+                                 <label class="form-check-label" for="inlineRadio1">1</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q7"
+                                     id="input-Q7-2" value="2">
+                                 <label class="form-check-label" for="inlineRadio2">2</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q7"
+                                     id="input-Q7-3" value="3">
+                                 <label class="form-check-label" for="inlineRadio3">3</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q7"
+                                     id="input-Q7-4" value="4">
+                                 <label class="form-check-label" for="inlineRadio3">4</label>
+                             </div>
+                             <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="Q7"
+                                     id="input-Q7-5" value="5">
+                                 <label class="form-check-label" for="inlineRadio3">5</label>
+                             </div>
+                         </div><hr>
+       <!--ส่งข้อมูล-->
+       <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                    </form>
+                    <br>
+                    <h3>การประเมินแบบเติมคำตอบ</h3><hr>
+                   
+                            
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
