@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/full-logo-b.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 850px; background-color: black;">
+            <div class="col-auto col-sm-3 col-md-4 col-lg-6 align-self-start">
+                <img src="./images/full-logo-w.png" width="270px" height="250px" style="margin: 100px;"
+                    class="rounded mx-auto d-block" alt="web-logo-black">
+            </div>
+            <div class="col-auto col-sm-9 col-md-8 col-lg-6 bg-white">
+                <div class="container" style="margin-top: 100px;">
+                    <h3 style="text-align: center;">Sign in</h3>
+                    <!--action ระบุว่าจะส่งไปให้ฝั่ง database ยังไง label for="บอกว่าต้องการเก็บข้อมูลอะไร"-->
+                    <form action="">
+                        <div class="mb-4">
+                            <label for="UserEmail" class="form-label">Email address</label>
+                            <div class="decinput">
+                                <input type="email" class="form-control" name="InputEmail1"
+                                    placeholder="6xxxxxxxxx@student.chula.ac.th" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="UserPassword" class="form-label">Password</label>
+                            <div class="decinput">
+                                <input type="password" class="form-control" name="InputPassword" required>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="submit" class="btn btn-dark">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
