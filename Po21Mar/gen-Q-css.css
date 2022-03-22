@@ -1,0 +1,31 @@
+/* likedislike */
+.box {
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+  }
+  
+  .form {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+    
+  }
+  
+  .custom-radio-button {
+    display: inline;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 25px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .svg-like {
+    fill: #7fe941;
+  }
+  .svg-dislike {
+    fill: #e94174;
+  }
+  
+  
