@@ -1,0 +1,40 @@
+/* likedislike */
+.box {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    height: 100%;
+  }
+  
+  .form {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+    
+  }
+  /* ซ่อนปุ่ม */
+  .custom-radio-button__container input[type="radio"] {
+      display: none;
+  }
+  
+  .custom-radio-button {
+    display: inline;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 25px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .svg-like {
+    fill: #979797;
+  }
+  .svg-dislike {
+    fill: #979797;
+  }
+  .svg-like:hover {
+    fill: #7fe941;
+  }
+  .svg-dislike:hover {
+    fill: #e94174;
+  }
