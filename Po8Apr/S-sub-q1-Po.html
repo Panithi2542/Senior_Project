@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ส่วนที่ดึง bootstrap มาใช้งาน-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- ส่วนที่นำ logo มาใส่เมื่อเปิด tabใหม่-->
+    <link rel="shortcut icon" href="./images/full-logo-b.png" type="image/x-icon">
+
+    <!--แต่ง css ตามไฟล์ style.css-->
+    <link rel="stylesheet" href="like-dislike-report.css">
+
+    <!--เว็บที่ดึง icon มาใช้งาน-->
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Subject Assessment</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--รายละเอียดแถบเมนูด้านบน-->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="border-radius: 10px;">
+                <div class="container-fluid">
+                    <!--ส่วน Logo learn -->
+                    <a href="#" class="navbar-brand">
+                        <img src="./images/full-logo-w.png" alt="" width="35" height="35"
+                            style="margin-right: 15px; margin-top: 1px;">
+                        <p class="d-inline-block"
+                            style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: 15px;">
+                            Future class | Electrical Engineering</p>
+                    </a>
+                    <!--สร้างปุ่มที่เมื่อแสดงผลในจอขนาดเล็กจะรวมเมนูไว้ในปุ่มนึง-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--ส่วนเมนูกลับไปหน้าmy course และ notification กำหนดให้เมนูติดขอบด้านซ้ายมือด้วย "d-flex justify-content-end"-->
+                    <div class="d-flex">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav align-items-end">
+                                <li class="nav-item">
+                                    <a href="S-home.html" class="nav-link"
+                                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">MY
+                                        COURSE</a>
+                                </li>
+                                <li class="nav-item" style="margin-right: 10px;">
+                                    <a href="#" class="nav-link"> <span
+                                            class="material-icons">notifications_active</span></a>
+                                </li>
+                                <!--ส่วนแสดงรูปและชื่อผู้ใช้งาน -->
+                                <div class="dropdown">
+                                    <a href="#"
+                                        class="d-flex align-items-center fw-light text-white text-decoration-none dropdown-toggle"
+                                        id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"
+                                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-bottom: 5px;">
+                                        <!-- ดึงรูปจากฐานข้อมูลแสดงผลที่ img src="ที่เก็บไฟล์รูปต่างๆ"-->
+                                        <img src="http://arunoommen.com/wp-content/uploads/2017/01/man-2_icon-icons.com_55041.png"
+                                            width="32" height="32" class="rounded-circle me-2">
+                                        <!--ดึงชื่อผู้ใช้งานจากฐานข้อมูล ชื่อที่ถูกดึงอยู่ภายใต้ <strong> ชื่ออาจารย์ </strong> -->
+                                        <strong> Mr.Annop Thaithan </strong>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="loginnew.html">Sign out</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+
+
+        <!--ส่วนเมนูด้านข้าง เมื่อหน้าจอขนาดเล็กจะแสดงผลเพียง Icon รายการต่างๆ ขนาดเมนู col-md-2-->
+
+        <div class="row flex-nowrap">
+
+
+            <div class="col-auto col-md-2 col-xl-2 px-sm-2 px-0 bg-dark"
+                style="border-radius: 20px; border-left: 5px solid rgb(41, 55, 255); margin-top: 20px;">
+
+                <ul class="nav flex-column sticky-top">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+
+                        <!-- แสดงชื่อวิชาที่ดึงข้อมูลจากฐานข้อมูล โดยชื่อวิชาจะแสดงภายใต้ <span class="fs-5 d-none d-sm-inline"> ชื่อวิชา </span>-->
+                        <a href="#"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span class="fs-5 d-none d-sm-inline"
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Properties
+                                of Electrical Engineering Materials</span></a>
+
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <!--แสดงรายละเอียดเมนูย่อยต่าง ๆ โดย <i class="cil-search"></i> คือการนำ icon ต่างๆมาแสดงหน้าชื่อเมนู -->
+                            <li class="stlist active">
+                                <a href="S-sub.html" class="nav-link align-middle px-0">
+                                    <span class="sticon"><i class="cil-search"></i></span>
+                                    <span class="sttitle ms-1 d-none d-sm-inline">About</span>
+                                </a>
+                            </li>
+                            <li class="stlist">
+                                <a href="S-req.html" class="nav-link align-middle px-0">
+                                    <span class="sticon"><i class="cil-dinner"></i></span>
+                                    <span class="sttitle ms-1 d-none d-sm-inline">Requestment</span></a>
+                            </li>
+                            <li class="stlist">
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <span class="sticon"><i class="cil-chart"></i></span>
+                                    <span class="sttitle ms-1 d-none d-sm-inline">Assessment</span>
+                                </a>
+                                <ul class="stlist collapse show nav flex-column ms-1" id="submenu1"
+                                    data-bs-parent="#menu">
+                                    <li class="sub-stlist">
+                                        <a href="S-sub-ass.html" class="nav-link px-0">
+                                            <span class="sticon"><i class="cil-spreadsheet"></i></span>
+                                            <span class="sttitle d-none d-sm-inline">Subject</span></a>
+                                    </li>
+                                    <li class="sub-stlist">
+                                        <a href="S-Ins-ass.html" class="nav-link px-0">
+                                            <span class="sticon"><i class="cil-people"></i></span>
+                                            <span class="sttitle d-none d-sm-inline">Instructor</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            <div class="col col-md-10">
+                <div class="col col-md-10" style="margin-top: 20px;">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="S-sub-ass.html">คะแนน</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="S-sub-q1.html">Q1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="S-sub-q2.html">Q2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="S-sub-q3.html">Q3</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--หัวข้อ:ข้อดีของการเรียนการสอนในรายวิชานี้-->
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>ข้อดีของการเรียนการสอนในรายวิชานี้</h3>
+                        </div>
+                        <div class="col">
+                            <!-- **หลังจากกดปุ่ม Add ทำให้ Model เด้งขึ้นมา** -->
+                            <div style="display: flex; justify-content:flex-end">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#Modalassessment1" data-bs-whatever="@mdo">Add</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- gen topic assessment1 -->
+                <div id="assessment_card"></div>
+
+                <!--**เด้ง Model หลังจากกดปุ่ม Add**-->
+                <div class="modal fade" id="Modalassessment1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- หัวข้อ -->
+                                <h5 class="modal-title" id="exampleModalLabel">Comment</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- ตัวโมเดลที่ซ่อนไว้ แสดงเมื่อกดปุ่ม Add -->
+                            <div class="modal-body">
+                                <!-- form id="addcomment" -->
+                                <form id="assessment1" method="POST" action="http://httpbin.org/post">
+                                    <!--ตัวรับ Comment-->
+                                    <div class="mb-3">
+                                        <!--เก็บ Comment-->
+                                        <label for="message-text" class="col-form-label">Comment:</label>
+                                        <textarea class="form-control" id="details-assessment1"
+                                            name="assessment1"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" form="assessment1">Add Comment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal report-->
+                <div class="modal fade" id="modelreport" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Report</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                เข้าข่ายเป็นข้อความที่ไม่สุภาพ ไม่ให้เกียรติผู้อื่น
+                                ไม่เกี่ยวข้องกับการแลกเปลี่ยนความคิดเห็นเพื่อพัฒนาระบบการศึกษา
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <!-- ใส่ php -->
+                                <button type="button" class="btn btn-primary" formaction="php">Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--ดึงไฟล์JSมาใช้-->
+                <script src="S-sub-q-js.js"></script>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
